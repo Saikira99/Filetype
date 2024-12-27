@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { DataImportComponent } from './data-import/data-import.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss'],
+  imports: [DataImportComponent], // Import the DataImportComponent
 })
 export class AppComponent {
-  title = 'my-angular-app';
+  title = 'my-angular-app'; // Title of the app
 }

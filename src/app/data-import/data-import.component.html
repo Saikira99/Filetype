@@ -1,0 +1,74 @@
+<div class="form-container">
+  <form>
+    <div class="row">
+      <!-- Source Type Dropdown -->
+      <div class="form-group col-12 col-md-6 col-lg-4">
+        <label for="sourceType"><span class="required">*</span>Source Type</label>
+        <select id="sourceType" class="form-control">
+          <option value="database">Database</option>
+          <option value="file">File</option>
+          <option value="api">API</option>
+        </select>
+      </div>
+
+      <!-- Connection Type -->
+      <div class="form-group col-12 col-md-6 col-lg-4">
+        <label for="connectionType"><span class="required">*</span>Connection Type</label>
+        <input
+          type="text"
+          id="connectionType"
+          class="form-control"
+          placeholder="Enter connection type"
+        />
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Test Button -->
+      <div class="form-group col-12">
+        <button type="button" class="btn btn-primary test-button">Test</button>
+      </div>
+
+      <!-- Location -->
+      <div class="form-group col-12 col-md-6 col-lg-4">
+        <label for="location"><span class="required">*</span>Location</label>
+        <input
+          type="text"
+          id="location"
+          class="form-control"
+          placeholder="Enter location"
+        />
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- File Path -->
+      <div class="form-group col-12 col-md-6 col-lg-4">
+        <label for="filePath"><span class="required">*</span>File Path</label>
+        <input type="file" id="filePath" class="form-control" />
+      </div>
+    </div>
+
+    <!-- Checkboxes -->
+    <div class="row">
+      <div class="form-check col-12 col-md-6 col-lg-4">
+        <input type="checkbox" id="bulkImport" />
+        <label for="bulkImport">Bulk import</label>
+      </div>
+      <div class="form-check col-12 col-md-6 col-lg-4">
+        <input type="checkbox" id="headerRow" />
+        <label for="headerRow">Check box for the first row as header</label>
+      </div>
+    </div>
+
+    <!-- Preview and Save Buttons -->
+    <div class="row button-group">
+      <div class="col-12 col-md-6 col-lg-4">
+        <button type="button" class="btn btn-secondary">Preview</button>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <button type="submit" class="btn btn-success">Save</button>
+      </div>
+    </div>
+  </form>
+</div>
